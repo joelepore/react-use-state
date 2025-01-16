@@ -29,7 +29,7 @@ const Box = ({ data }) => {
           />
         ))}
       </div>
-      <Card />
+      <Card text={data[0].description} />
     </div>
   )
 }
