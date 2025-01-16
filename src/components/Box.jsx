@@ -23,6 +23,7 @@ const Box = ({ data, icons }) => {
             text={item.title}
             icon={icons.find(icon => icon.id == item.id).component}
             onClick={() => handleButtonClick(item.id)}
+            active={item.id === selectedId}
           />
         ))}
       </div>
