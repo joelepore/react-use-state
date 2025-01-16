@@ -7,7 +7,11 @@ const Box = ({ data, icons }) => {
   const [selectedId, setSelectedId] = useState(null);
 
   const handleButtonClick = (id) => {
-    setSelectedId(id);
+    if (selectedId === id) {
+      setSelectedId(null);
+    } else {
+      setSelectedId(id);
+    }
   }
 
   return (
