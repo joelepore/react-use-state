@@ -27,7 +27,7 @@ const Box = ({ data, icons }) => {
           />
         ))}
       </div>
-      {selectedId && <Card text={data.find(item => item.id === selectedId).description} />}
+      <Card text={selectedId ? data.find(item => item.id === selectedId).description : 'Nessun linguaggio selezionato.'} />
     </div>
   )
 }
