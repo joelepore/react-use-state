@@ -1,11 +1,8 @@
 import Box from "./components/Box"
 
-import { FaHtml5 } from "react-icons/fa"
-import { IoLogoCss3 } from "react-icons/io5";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
+import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
 import { SiExpress } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
 
 import languages from "./assets/languages"
 
