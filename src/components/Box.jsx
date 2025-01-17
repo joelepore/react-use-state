@@ -2,16 +2,11 @@ import { useState } from "react"
 import Button from "./Button"
 import Card from "./Card"
 
-
 const Box = ({ data, icons }) => {
   const [selectedId, setSelectedId] = useState(null);
 
   const handleButtonClick = (id) => {
-    if (selectedId === id) {
-      setSelectedId(null);
-    } else {
-      setSelectedId(id);
-    }
+    setSelectedId(selectedId === id ? null : id);
   }
 
   return (
