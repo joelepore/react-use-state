@@ -5,6 +5,8 @@ import Card from "./Card"
 const Box = ({ data, icons }) => {
   const [selectedId, setSelectedId] = useState(null);
 
+  const cardText = selectedId ? data.find(item => item.id === selectedId).description : 'Nessun linguaggio selezionato.';
+
   const handleButtonClick = (id) => {
     setSelectedId(selectedId === id ? null : id);
   }
@@ -22,7 +24,7 @@ const Box = ({ data, icons }) => {
           />
         ))}
       </div>
-      <Card text={selectedId ? data.find(item => item.id === selectedId).description : 'Nessun linguaggio selezionato.'} />
+      <Card text={cardText} />
     </div>
   )
 }
