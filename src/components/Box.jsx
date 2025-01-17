@@ -10,7 +10,7 @@ const Box = ({ data, icons }) => {
   }
 
   return (
-    <div className="mt-8">
+    <div className="my-8 max-w-3xl mx-auto">
       <div className="flex flex-wrap gap-x-4 gap-y-2 justify-center">
         {data.map(item => (
           <Button
